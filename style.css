@@ -3,3 +3,6 @@
     overflow: hidden;
     width: 50px;
 }
+.list-unstyled li a.text-dark:hover {
+    color:navy !important;
+}
