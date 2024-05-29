@@ -10,54 +10,79 @@
     <link rel="icon" href="/image/logo.jpeg" type="image/x-icon" id="logo">
 </head>
 <body class="bg-light">
-    <header class="bg-dark text-white py-3">
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-md-10 d-flex align-items-center">
-                    <img src="image/logo.jpeg" class="img-fluid me-3" alt="Logo BorgWarner" id="logo">
-                    <h1 class="mb-2">BorgWarner</h1>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+            <div class="container-fluid">
+                <img src="/image/logo.jpeg" alt="BorgWarner" id="logo" width="50" href="/index.html">
+                    <!-- Logo ou Título -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Quem somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Carreiras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Suporte ao Cliente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Gestão de Funcionários</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </header>
+        </nav>
+                </div>
+            </div>
+        </nav>
+            </header>
     
     <main class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
-                        <a href="javascript:history.back()" class="btn btn-outline-light"><i class="bi bi-arrow-left"></i></a>
+                        <a href="/index.html" class="btn btn-outline-light"><i class="bi bi-arrow-left"></i></a>
                         <h2 class="mx-auto">Registo</h2>
                     </div>
-                    <div class="card-body">
-                        <form action="/pagina-inicial.html" method="POST">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Senha</label>
-                                <input type="password" class="form-control" id="password" name="password" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="confirm-password" class="form-label">Confirme a Senha</label>
-                                <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
-                            </div>
-                            <div class="d-grid">
-                                <button type="submit" class="btn btn-dark me-3">Registar</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    <form class="row g-3 p-4" action="login.html">
+                        <div class="col-md-6">
+                            <label for="inputNome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="inputNome" name="nome" placeholder="Primeiro Nome">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputApelido" class="form-label">Apelido</label>
+                            <input type="text" class="form-control" id="inputApelido" name="apelido" placeholder="Último nome">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputUsername" class="form-label">Nome de Utilizador</label>
+                            <input type="text" class="form-control" id="inputUsername" name="username" placeholder="Insira o nome de utilizador">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Insira o seu email">
+                        </div>
+                        <div class="col-12">
+                            <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+                            <input type="date" class="form-control" id="dataNascimento" name="dataNascimento">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-dark btn-lg">Registar</button>
+                        </div>
+                    </form>
+                    
+                    
     </main>
 
-    <footer class="bg-dark text-white py-3 fixed-bottom">
+    <footer class="bg-dark text-white py-2 fixed-bottom">
         <div class="container text-center">
             <p class="mb-0">&copy; 2024 BorgWarner. Todos os direitos reservados.</p>
         </div>
